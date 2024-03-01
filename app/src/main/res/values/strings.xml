@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+
+    <string name="title_catalog">Каталог продукции</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="no_content_available">No Content Available</string>
+
+    <!-- notification -->
+    <string name="notification_channel_name">Download all items</string>
+    <string name="notification_channel_description">Download all items description</string>
+    <string name="notification_channel_download_complete">Download complete</string>
+    <string name="notification_channel_download_error">Download error</string>
+
+    <!-- sharing -->
+    <string name="sharing_title">Share item</string>
+    <string name="rate">Rate now</string>
+    <string name="later">Maybe later</string>
+    <string name="rate_dlg_message">Support us by give 5 star and write your review</string>
+    <string name="rate_dlg_title">Rate us 5 star</string>
+
+    <!-- version checking -->
+    <string name="check_version_loading">Checking for updates...</string>
+    <string name="check_version_error">Error while check new version!</string>
+    <string name="downloading">Downloading new version...</string>
+    <string name="title_file_download">APK is downloading</string>
+    <string name="storage_access_required">Storage access is required to downloading the file.</string>
+    <string name="storage_permission_denied">Storage permission request was denied.</string>
+    <string name="ok">Готово</string>
+
+    <!-- product basket -->
+    <string name="title_basket">Корзина</string>
+    <string name="add_to_shopping_card">Добавить в корзину</string>
+    <string name="empty_basket">Ваша корзина пуста</string>
+    <!-- Товары с учётом скидки -->
+    <!-- Доставка за 15 минут -->
+    <!-- К оплате -->
+    <string name="go_to_checkout">Заказать</string>
+    <string name="checkout">Заказать</string>
+    <string name="add_address">Адрес доставки</string>
+    <string name="enter_address_text">Введите адрес доставки</string>
+    <string name="save_address">Сохранить адрес</string>
+</resources>

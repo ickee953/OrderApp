@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="@dimen/item_image_height"
+            android:layout_marginTop="@dimen/content_margin_min"
+            android:layout_marginBottom="@dimen/content_margin_min"
+            android:layout_marginLeft="@dimen/content_margin_min"
+            android:src="@drawable/ic_baseline_art_track_24"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/content_margin_min"
+            android:layout_marginTop="@dimen/content_margin_min"
+            android:layout_marginBottom="@dimen/content_margin_min"
+            android:layout_toEndOf="@+id/image_view"
+            android:layout_toRightOf="@+id/image_view"
+            android:textSize="@dimen/list_item_title_text_size"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/content_margin_min"
+            android:layout_marginLeft="@dimen/content_margin_min"
+            android:layout_marginRight="@dimen/details_content_margin_right"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_margin_min"
+            android:layout_marginBottom="@dimen/content_margin_mid"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/list_item_price_text_size"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/product_count_view"
+        android:layout_width="@dimen/item_add_to_basket_with"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/content_margin_min"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/product_count_inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/product_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"/>
+
+        <ImageButton
+            android:id="@+id/product_count_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ImageButton
+        android:id="@+id/add_to_card"
+        android:layout_width="@dimen/item_add_to_basket_with"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/content_margin_min"
+        android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+    <!-- just a divider -->
+    <View android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
