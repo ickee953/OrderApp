@@ -31,3 +31,6 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Room generated database schema path
+app/src/main/assets/schemas/
