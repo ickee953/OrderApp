@@ -181,14 +181,11 @@ class CategoryItemListFragment : Fragment(), Refreshable {
         while(iterator.hasNext()){
             val item = iterator.next()
             item.let { item->
-                item.let { item->
-                    if( item.category != null ){
+                if( item.category != null ){
+                    if( itemsMap[item.category] == null )
+                        itemsMap[item.category!!] = ArrayList()
 
-                        if( itemsMap[item.category] == null )
-                            itemsMap[item.category!!] = ArrayList()
-
-                        itemsMap[item.category]!!.add( item )
-                    }
+                    itemsMap[item.category]!!.add( item )
                 }
             }
         }
