@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitBuilder {
 
-    const val RELEASE_URL = "https://5.8.10.225:8080/items"
+    const val RELEASE_URL = "http://5.8.10.225/items"
     const val DEBUG_URL   = "http://10.0.2.2:8080"
 
     private val okHttpClient: OkHttpClient = OkHttpClient.Builder()
